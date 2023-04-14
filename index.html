@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VAPE Z - Your One-Stop Shop for Vape Products</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="myscript.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<!--WARNING -->
+
+<div>
+	<h1 style="text-align: center; font-size: 20px;">
+		<span style="background-color: #89CFF0; color: red;">WARNING:</span> 
+		<span style="background-color: #89CFF0;">This product contains nicotine. Nicotine is an addictive chemical.</span>
+	</h1>
+</div>
+
+<!--SOLID BLACK LINE -->
+
+<div style="border-top: 7px solid black;"></div>
+
+<!--MOVING TEXT -->
+
+<div class="top-bar">
+	<div class="marquee">
+	  <span>FREE DELIVERY ABOVE 2K ORDERS ALL OVER PAKISTAN. During Sale Period, Both Order Processing and Delivery May Take Longer Than Usual.</span>
+	</div>
+  </div>
+  
+<!--SOLID BLACK LINE -->
+
+<div style="border-top: 7px solid black;"></div>
+
+<!--Header & Nav Menu -->
+<section id="header">
+	<h1 class="vape-z">VAPE Z</h1>
+  
+	<div class="sidebar">
+	  <ul id="navbar">
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="#product1">Products</a></li>
+		<li><a href="blog.html" target="_blank">Blog</a></li>
+		<li><a href="#TESTIMONIALS">Testimonials</a></li>
+		<li><a href="#container">About Us</a></li>
+		<li><a href="#contact-form">Contact Us</a></li>
+		<li><a href="#offlinelocation">Location</a></li>
+		<li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+		<a href="#" id="close"><i class="far fa-times"></i></a>
+	  </ul>
+	</div>
+	<div id="mobile">
+	  <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+	  <i id="bar" class="fas fa-outdent"></i>
+	</div>
+
+	<!-- Responsive SideBar -->
+	
+	<script>
+		const bar = document.getElementById('bar');
+		const close = document.getElementById('close');
+		const nav = document.getElementById('navbar');
+		
+		if (bar) {
+		  bar.addEventListener('click', () => {
+			nav.classList.add('active');
+		  });
+		}
+		
+		if (close) {
+		  close.addEventListener('click', () => {
+			nav.classList.remove('active');
+		  });
+		}
+		</script>
+</section>
+
+
+	  <!--SEARCH BAR 
+
+	  <!DOCTYPE html>
+	  <html>
+	  <head>
+		<title>Product Search</title>
+		<style>
+		  #search-box {
+			width: 300px;
+			height: 30px;
+			margin-left: 30px;
+		  }
+		</style>
+		<script>
+		  function searchFunction() {
+			let input = document.getElementById("search-box");
+			let filter = input.value.toUpperCase();
+			let table = document.getElementById("product-table");
+			let tr = table.getElementsByTagName("tr");
+	  
+			for (let i = 0; i < tr.length; i++) {
+			  let td = tr[i].getElementsByTagName("td");
+			  let found = false;
+			  for (let j = 0; j < td.length; j++) {
+				if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+				  found = true;
+				  break;
+				}
+			  }
+			  if (found) {
+				tr[i].style.display = "";
+			  } else {
+				tr[i].style.display = "none";
+			  }
+			}
+		  }
+		</script>
+	  </head>
+	  <body>
+		<input type="text" id="search-box" onkeyup="searchFunction()" placeholder="Search for products...">
+		<table id="product-table">
+		  <tr>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Description</th>
+		  </tr>
+		  <tr>
+			<td>Product A</td>
+			<td>$19.99</td>
+			<td>Description of Product A</td>
+		  </tr>
+		  <tr>
+			<td>Product B</td>
+			<td>$29.99</td>
+			<td>Description of Product B</td>
+		  </tr>
+		  <tr>
+			<td>Product C</td>
+			<td>$39.99</td>
+			<td>Description of Product C</td>
+		  </tr>
+		</table>
+	  </body>
+	  </html> -->
+
+	  <!--VIDEO -->
+	
+	<section class="video-section">
+		<div class="video-container">
+		  <video controls autoplay muted loop>
+			<source src="video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </section>
+
+	  <!--COUPON SLIDER-->
+
+	  <section id="coupon-slider">
+		<h2>Coupons</h2>
+		<div class="slick-carousel">
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>25% off on all e-liquids</h4>
+			<p>Use coupon code ELIQUID25 at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>Free shipping on all orders above $50</h4>
+			<p>Use coupon code FREESHIP50 at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>15% off on all starter kits</h4>
+			<p>Use coupon code STARTER15 at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>20% off on all CBD-infused e-juices</h4>
+			<p>Use coupon code CBDEJUICE20 at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>5% off on all orders for new customers</h4>
+			<p>Use coupon code NEWCUSTOMER5 at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>Free battery with every purchase of a pod</h4>
+			<p>Use coupon code FREEBATTERY at checkout</p>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1136155337/vector/promo-code-coupon-code-flat-vector-set-design-illustration-on-white-background.jpg?s=612x612&w=0&k=20&c=sM95EWp2rPqPfp0pGxKi4Jkjgz-0buvGtSSZkNQYIao=" alt="">
+			<h4>10% off on all replacement coils</h4>
+			<p>Use coupon code COILS10 at checkout</p>
+		  </div>
+		</div>
+	  </section>
+
+	   <!--HERO SECTION -->
+	   
+	   <section class="hero">
+		<div class="overlay">
+		  <h4>Discover the latest and greatest vape products</h4>
+		  <h2>Unlock an unparalleled</h2>
+		  <h1>Vaping Experience</h1>
+		  <p>Get discounts from coupons!!!</p>
+		  <div class="btn-group">
+			<button><a href="#Featured-Products" style="text-decoration: none;">Shop Now</a></button>
+			<button><a href="#about-us" style="text-decoration: none;">Learn More</a></button>
+		  </div>
+		</div>
+	  </section>
+	  
+
+
+	  	  <!--Features Section-->
+		  <section id="feature" class="section-p1">
+			<div class="fe-box">
+				<img src="freedelivery.jpg" alt="">
+				<h6>Free Shipping</h6>	
+			</div>
+			<div class="fe-box">
+				<img src="orderonline.jpg" alt="">
+				<h6>Online Order</h6>	
+			</div>
+			<div class="fe-box">
+				<img src="savemoney.jpg" alt="">
+				<h6>Save Money</h6>	
+			</div>
+			<div class="fe-box">
+				<img src="promootion.jpg" alt="">
+				<h6>Promotions</h6>	
+			</div>
+			<div class="fe-box">
+				<img src="happyselling.jpg" alt="">
+				<h6>Happy Sell</h6>	
+			</div>
+			<div class="fe-box">
+				<img src="24-7.png" alt="">
+				<h6>24/7 Support</h6>	
+			</div>
+		  </section>
+
+
+	  <br><br><br><br>
+	  <!--CLEARANCE SALE-->
+
+	  <div id="CLEARANCESALE">
+		<h1 style="text-align: center;">CLEARANCE SALE</h1>
+	</div>
+	<br><br><br><br>
+	<div class="carousel">
+		<img src="7.jpg">
+		<img src="8.jpg">
+		<video autoplay loop muted>
+			<source src="9.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		<img src="10.jpg">
+		<img src="11.jpg">
+		<img src="12.jpg">
+		<img src="13.jpg">
+		<img src="14.jpg">
+		<img src="15.jpg">
+		<img src="16.jpg">
+		<img src="17.jpg">
+		<img src="18.jpg">
+	  </div>
+
+	  <br><br>
+	  <!--FEATURED PRODUCT SELECTION -->
+	  <section id="product1" class="section-p1">
+		<div id="Featured-Products">
+		<h2>Featured Products</h2>
+		<p>Experience the next level of vaping with our premium products and flavors!</p>
+		<div class="pro-container">
+			<div class="pro">
+				<img src="19.jpeg" alt="">
+				<div class="des">
+					<span>Vaporesso Xros Mini 🐉🔥</span>
+					<p>Like a Dragon, it boasts beautiful scales with a thick body. An absolutely stunning device😍</p>
+<h3>Features:</h3>
+<ul>
+  <li>Type-C Charging Port</li>
+  <li>Refillable pod with 2mL Juice</li>
+  <li>Coloured LED light lets you know how much battery life left</li>
+  <li>Adjustable Airflow System which can Rotate the pod.</li>
+  <li>Intuitive Firing Button, which is best for vaping.</li>
+  <li>Preinstalled 1.2ohm coil</li>
+  <li>SSS Leak-Resistant Technology</li>
+  <li>0.8ohm-1.2 ohm Coil resistance</li>
+  <li>Magnetic Pod Connection which prevents leakage</li>
+  <li>3 Color LED Light Indicator</li></ul>
+  <p>Dimensions – 98.9mm by 23.4mm by 13.5mm</p>
+<br>Lime Green<br><br>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="20.jpeg" alt="">
+				<div class="des">
+					<span>Vaporesso Xros Mini 🐉🔥</span>
+					<p>Like a Dragon, it boats beautiful scales with a thick body. An absolutely stunning device😍</p>
+<h3>Features:</h3>
+<ul>
+  <li>Type-C Charging Port</li>
+  <li>Refillable pod with 2mL Juice</li>
+  <li>Coloured LED light lets you know how much battery life left</li>
+  <li>Adjustable Airflow System which can Rotate the pod</li>
+  <li>Intuitive Firing Button, which is best for vaping</li>
+  <li>Preinstalled 1.2ohm coil</li>
+  <li>SSS Leak-Resistant Technology</li>
+  <li>0.8ohm-1.2 ohm Coil resistance</li>
+  <li>Magnetic Pod Connection which prevents leakage</li>
+  <li>3 Color LED Light Indicator</li>
+</ul>
+<p>Dimensions – 98.9mm by 23.4mm by 13.5mm</p><br>Silver<br><br>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="21.jpeg" alt="">
+				<div class="des">
+					<p><strong><em>Bow down to the King of Vapes👑🔱</em></strong></p>
+<p><strong><em>Uwell Caliburn Koko Prime</em></strong></p>
+<p>Powered by the strongest 690mAh built-in battery and a 15W max output, this beautiful device is portable and fits perfectly in hand💯 With a compact and lightweight design and interchangeable Decorative Panels, this device is the most popular among vapers with a top notch taste 👌👌👌</p>
+<p>Top features:</p>
+<ul>
+<li>Refillable Pod Kit</li>
+<li>690mAh Built-In Battery</li>
+<li>15W Output</li>
+<li>Inhale Activated</li>
+<li>Dual Airflow System</li>
+<li>2ml E-Liquid Capacity</li>
+<li>Removable Coils</li>
+<li>Top Fill</li>
+</ul>
+<p>With a metal hard body, oozing colors and a name famous among all, Koko Prime is one of a kind OG device 🤙🏻</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="22.jpeg" alt="">
+				<div class="des">
+					<span>🔥🚨Internationally Top selling Caliburn A2</span>
+					<p><span style="font-size:24px;"><span style="color:#FF4500;">🔥🚨</span>Internationally Top selling Caliburn A2 is live!!! One of the most top rated device for vapers has made it&rsquo;s way to Vape Z&rsquo;s hot item category ! 🚨🔥</span></p>
+<p>This device is famous for many reasons including it&rsquo;s huge high density puff clouds, device portability, stunning body, long life and unmatchable quality 💯</p>
+<p><strong><span style="font-size:18px;">🌟The box contains:</span></strong></p>
+<ul>
+<li><span style="font-size:18px;">1 device</span></li>
+<li><span style="font-size:18px;">2 x Meshed-H 0.9 Ω POD</span></li>
+<li><span style="font-size:18px;">User Manual</span></li>
+</ul>
+<p>With a sleek design and beautiful aluminium body it fits into your hand beautifully 😍 🔥🔥💯</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="23.jpeg" alt="">
+				<div class="des">
+						🚨GeekVape Aegis One pod kit🚨 (780mAh Battery Starter Pen Kit) Being one of the most iconic and top selling pen vape around the world, Geekvape One is here in all its glitz and glamour✨</p>
+						<h4>Features:</h4>
+						<ul>
+						  <li>15 Minutes Fast Charging</li>
+						  <li>Minimum lasting of 2 days</li>
+						  <li>Leakproof 2 ml Pod</li>
+						  <li>MTL Experience</li>
+						  <li>780 mAh Battery</li>
+						  <li>Rechargeable battery Type-C DC 5V/2A</li>
+						  <li>Draw Activation / Fire Button</li>
+						  <li>Multipurpose button for 3 level output options 
+							<ul>
+							  <li>High – Green (3.5v)</li>
+							  <li>Mid– Blue (3.3v)</li>
+							  <li>Low– Red (3.1v)</li>
+							</ul>
+						  </li>
+						</ul>
+						<p>One of the devices producing a huge smoke, best for people who prefer more smoke with their vapes. A beauty fit for the finest🤍</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="24.jpeg" alt="">
+				<div class="des">
+					<h1>👑 Voopoo Vinci Royal Edition 👑</h1>
+<p>Give way to✨ Royalty ✨ Voopoo is back with its Royal edition having zinc and aluminium alloy body made with classical and modern patterns from the very best artisans undergoing 12 manufacturing processes with 68 steps😮‍💨🔥</p>
+<p><strong>🌟 Pod Kit consists of:</strong></p>
+<ul>
+  <li>1 Vinci Royal Device</li>
+  <li>1 Vinci Pod Cartridge</li>
+  <li>1 Type C Cable</li>
+  <li>1 User Manual</li>
+</ul>
+<p>The airflow can be adjusted from the side button to increase/decrease airflow🤩</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="26.jpeg" alt="">
+				<div class="des">
+					<p><strong>VGOD Cubano Rich Creamy Cigar🚬🤤🔥</strong></p>
+<p>A perfect blend of an organic hand-crafted Cuban Cigar with added creamy, smooth vanilla and coffee gives you the ultimate taste of luxury. This premium liquid is perfect for anyone who loves a taste that tingles their tastebuds with just the right amount of strong, raw, organic tobacco mixed with creamy vanilla and coffee drizzle. 🤤☕️🧁🚬 Classic tobacco with velvety and buttery vanilla makes for an unforgettable taste of this e-liquid. A true embodiment of a luxurious premium liquid fit only for an audience of rich taste✨</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="27.jpeg" alt="">
+				<div class="des">
+					<h2>Voopoo Vinci Royal Edition Pod Kit Vape</h2>
+					<p>The VooPoo Vinci Royal Edition Pod Kit vape features an aluminum alloy finished with an elegant royal edition printed panel. There is an upgraded leak-proof design which enables your chosen 2ml e-liquid to be filled at the top, you can also increase or decrease the airflow with just one button. This Royal Edition kit is really worth the hype.</p>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+		</div>
+	</div>
+	  </section>
+
+      <br><br>
+	  <!--Graphs -->
+	  <style>
+		#banner8 {
+		  text-align: center;
+		  background-image: linear-gradient(to right, #87CEFA, #FFC0CB);
+		  color: black; /* to set the text color to white */
+		  padding: 20px; 
+		}
+		
+		#banner8 h1 {
+		  margin-bottom: 20px;
+		}
+		
+		#banner8 .image-container {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  margin-top: 20px;
+		}
+		
+		#banner8 .image-container img {
+		  width: 400px;
+		  height: 300px;
+		  object-fit: cover;
+		  margin: 0 10px;
+		}
+	  </style>
+	  
+	  <section id="banner8">
+		<h1>Graph Insights</h1>
+		
+		<div class="image-container">
+		  <img src="flavour graph.jpg" alt="Image 1">
+		  <img src="pod graph.jpg" alt="Image 2">
+		</div>
+	  </section>
+	  
+	  
+
+	  <br><br>
+	  <!--CALL TO ACTION BANNER-->
+
+<section id="banner" class="section-m1">
+	<h4>VAPE Z</h4>
+	<h2>Up to <span>70%</span> OFF - All Vapes and Flavours</h2>
+	<button class="normal"><a href="#Featured-Products" style="text-decoration: none;">Explore More</a></button>
+</section>
+
+	  <br><br>
+	  <!--NEW ARRIVAL PRODUCTS -->
+
+	  <section id="product1" class="section-p1">
+		<div id="New-Products">
+		<h2>New Arrival Products</h2></div>
+		<p>Stay cool this summer with our refreshing and fruity vape flavors!</p>
+		<div class="pro-container">
+			<div class="pro">
+				<img src="28.jpg" alt="">
+				<div class="des">
+					<span>🍒VGOD Iced Berry Bomb 🍒🧊</span>
+					<h5>One of our personal favourite Vgod flavours. Through its fruity smell and delicious taste, it has made people hooked to this flavour. 🫐🍓🍇
+
+						We swear by Iced berry bomb and we hope you love it as much as we do🔥</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="29.jpg" alt="">
+				<div class="des">
+					<span>Vgod Iced Mango Bomb!🥭 🧊🥶🥶</span>
+					<h5>If you’re a lover of fruity flavours, you’ll fall in love with Vgod Iced Mango Bomb!🥭 🧊🥶🥶
+
+						Not only does it give a rich fruity smell but an amazing chilly mango flavour making it a treat for vapers🥶🔥One of the top selling Vgod flavours, do give a try to Iced Mango Bomb 💣 you’ll not forget the taste 💯
+						</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="30.jpeg" alt="">
+				<div class="des">
+					<span>VGOD Iced Apple Bomb</span>
+					<h5>Apples in the attic, apples in the hall; Apples in the summer, apples in the fall; I will eat
+						some apples, I will eat them All ! 🤤🍏🍎
+						
+						VGOD Iced Apple Bomb is here to give you that fresh fruity smell of an apple orchard and sweet taste of freshly ripe green apples. It's oozing with the natural goodness that drags you in!😍
+						
+						So, Have a taste of fresh organic apples through
+						one of our top selling Iced flavours 🧊 🍏🥶</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="31.jpeg" alt="">
+				<div class="des">
+					<span>VGOD Iced Purple Bomb !!! 🧊🍇 💣 ✨</span>
+					<h5>Freshly picked grapes from vineyards bursting with a juicy, sweet and sour taste that mingles your tastebuds 👅 🍇
+
+						These fresh, plump, organic and vibrant Concord grapes are hand picked and crushed with iced menthol creating an exquisitely delightful and sweetly pleasant taste. 🥶🧊🍇
+						
+						Vgod iced purple bomb is a perfect mix between sweet and sour, a balance that keeps you coming back for the taste🔥
+						</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="32.jpeg" alt="">
+				<div class="des">
+					<span>Tokyo Iced Watermelon 🍉 🍉🍉
+						🎶 watermelon sugar high 🎶</span>
+					<h5>Juice from the gardens of ripe luscious and juicy watermelons with a finishing of ice, you’re in for a HUGE treat if you taste Tokyo’s most hit flavour, Iced Watermelon 🤤🤤🤤
+
+						Imagine tasting a freshly cut watermelon slice in the summers, but better it’s in the winters so it makes that icy chill run down your spine 🧊❄️☃️ *brrrr*
+						
+						With each enhale, you experience the icy cold menthol with a tingling taste of freshly ripe watermelon that makes your breath fresh and gives you a refreshing taste 🍉🧊❄️☃️
+						
+						A balanced flavour that’s liked by everyone, making Iced Watermelon one of the most sold ejuices 😮‍💨🔥</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="33.jpeg" alt="">
+				<div class="des">
+					<span>Tokyo Iced Pina Colada 🥥 🍍🧊🌴</span>
+					<h5>Tokyo Iced Pina Colada 🥥 🍍🧊🌴
+						With a refreshing taste and balanced flavour of 30 ml/30 mg, this flavour gives a burst of tastes in your mouths. With a tropical taste of Pineapples 🍍, sweet coconut 🥥 and light yummy cream, this ejuice gives a juicy iced taste 🧊
+						
+						Being ideal for vapers with a less powerful throat hit but getting full flavour of the juice 👅 this flavour is light, uplifting and beyond refreshing.
+						
+						So, give Tokyo’s Iced Pina Colada a try and enter the tropics🌴🍍🥥
+						</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="34.jpeg" alt="">
+				<div class="des">
+					<span>Tokyo Iced Mango 🥭🥭🥭🥭</span>
+					<h5>With one of the most loveable flavours of Tokyo, Tokyo Iced Mango is here to save your vaping needs🧊🥭❄️
+
+						With smell of freshly ripe mangoes picked from fresh from mango farms, the taste and aroma both are on spot. With 30 ml/mg, the balanced flavour and icy touch of Tokyo Iced Mango is liked by everyone. 💯
+						
+						Mango flavour is the top liked ejuices among vapers and add a little icy touch to it, makes you breathe that fresh menthol and you feel like you’re standing in a mango farm about to pick freshly riped yellow mangoes in a chilly weather!
+						
+						Try Tokyo’s Iced Mango for yourself. One of a kind ❄️🧊🥭</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+			<div class="pro">
+				<img src="36.jpeg" alt="">
+				<div class="des">
+					<span>Tokyo Iced PEACH 🍑🍑🍑🍑</span>
+					<h5>One of the finest and most addictive 💯 Try at your own risk.
+
+						Fresh honey peach with its ripe sweet smell and burst of refreshing mouth watering sweet-sour flavour, this flavour gives you that kick which you need in every ejuice. 🍯🍑
+						
+						Peaches are always light l, yummy, mouth watering and refreshing and Tokyo iced peach inculcates that into its delicious rich flavour, the fruity and balanced honey peachy one of a kind taste always keeps you hooked for it. That’s the reason it’s one of the vapers favourite and always in high demand💯🍑🍯
+						
+						Tokyo iced series are the most popular series of Tokyo and Peach is the most sought after. Don’t believe us? Try it for yourselves.💯
+						
+						30 ml, 30 mg, the most balanced with a perfect nicotine kick✅
+						</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$78</h4>
+				</div>
+				<a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+						</div>
+		</div>
+	
+	  </section>
+
+	<br><br> <br><br>
+	
+	<!--CALL TO ACTION BANNERS -->
+	<section id="sm-banner" class="section-p1">
+		<div class="banner-box">
+			<h4>Crazy Deals</h4>
+			<h2>Bundles</h2>
+			<span>Stock up and save with our bundle deals! <br> Buy multiple products together and enjoy a discount on your purchase.</span>
+			<button class="white"><a href="#Featured-Products">Learn More</a></button>	
+		</div>
+		<div class="banner-box banner-box2">
+			<h4>Crazy Deals</h4>
+			<h2>Buy 1 Get 1 FREE</h2>
+			<span>Don't miss out on our amazing 'buy 1 get 1 free' offer! <br> Treat yourself to one vape and get another one on us.</span>
+			<button class="white"><a href="#New-Products">Learn More</a></button>			
+		</div>
+	</section>
+
+	<!--Text Banners -->
+	<section id="banner3">
+		<div class="banner-box">
+			<h2>Vaping is not just a habit. <br> It's a lifestyle. <br> Join the community. <br> Discover a world of flavor and fun!</h2>	
+		</div>
+		<div class="banner-box banner-box2">
+			<h2>Experience the freedom of vaping. <br> Enjoy your favorite flavors <br> anytime, anywhere. <br> Without the hassle of smoke or ash.</h2>	
+		</div>
+		<div class="banner-box banner-box3">
+			<h2>Vaping is more than <br> just blowing clouds. <br> It's an art form. <br> Express yourself with our wide  <br> variety of flavors and devices.</h2>
+		</div>
+	</section>
+
+	<!--NewsLetter -->
+	<section id="newsletter" class="section-p1 section-m1">
+		<div class="newstext">
+			<h4>Sign Up For Newsletters</h4>
+			<p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+		</div>
+		<div class="form">
+			<input type="text" placeholder="Your email address">
+			<button class="normal">Siign Up</button>
+		</div>
+	</section>
+
+
+	<br><br> <br><br>
+	
+	<!--CONTACT FORM -->
+
+	
+	<form action="#" method="post">
+		<div id="contact-form">
+		<h1>CONTACT US FORM</h1>
+	</div>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phoneno">Phone Number</label>
+		<input type="phoneno" id="phoneno" name="phoneno" required>
+		
+		<label for="message">Message</label>
+		<textarea id="message" name="message" required></textarea>
+		
+		<button type="submit">Submit</button>
+	  </form>
+
+
+	  <br><br><br><br>
+	    <!--TESTIMONIALS -->
+		<div id="TESTIMONIALS">
+			<h1 style="text-align: center;">TESTIMONIALS FROM OUR BELOVED CUSTOMERS</h1>
+		</div>
+		<br><br><br><br>
+		<div class="carousel">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<video autoplay loop muted>
+				<source src="6.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+		  </div>
+	  
+
+		  <br><br><br><br>
+		  <!--FAQs -->
+		  <section class="faq-section">
+			<img src="faq.png" class="faq">
+
+			<div class="faq-item">
+				<h3>What is vaping?</h3>
+				<p>Vaping is the act of inhaling vapor produced by an electronic cigarette or other vaping device.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>Is vaping safer than smoking?</h3>
+				<p>While some studies suggest that vaping may be less harmful than smoking, it is not completely safe. Vaping can still expose users to harmful chemicals and potentially harmful metals, and it can also have negative effects on lung function and cardiovascular health.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>What are the different types of vaping devices?</h3>
+				<p>There are many different types of vaping devices, including e-cigarettes, vape pens, and box mods. Each type of device has its own unique features and functions.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>What is in vape juice?</h3>
+				<p>Vape juice, also known as e-liquid, typically contains a mixture of propylene glycol, vegetable glycerin, flavorings, and nicotine (although some vape juices are nicotine-free).</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>Is it legal to vape?</h3>
+				<p>The legality of vaping varies depending on where you are located. In some places, vaping is completely legal, while in others it is heavily regulated or even banned.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>Can you vape indoors?</h3>
+				<p>Whether or not you can vape indoors depends on the policies of the specific location you are in. Some places allow vaping indoors, while others prohibit it.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>What are the risks of vaping?</h3>
+				<p>The risks of vaping include exposure to harmful chemicals and metals, negative effects on lung function and cardiovascular health, and the potential for addiction to nicotine.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>Can vaping help you quit smoking?</h3>
+				<p>While some people use vaping as a way to quit smoking, it is not an FDA-approved method for smoking cessation. Additionally, some studies have suggested that using vaping to quit smoking may actually make it harder to quit in the long run.</p>
+			  </div>
+
+			<div class="faq-item">
+				<h3>How do you choose the right vaping device?</h3>
+				<p>Choosing the right vaping device depends on a variety of factors, including your personal preferences, the features and functions you are looking for, and your budget. It is important to do your research and choose a device that is safe and reliable.</p>
+			  </div>
+
+			<div class="faq-item">
+			  <h3>What is your return policy?</h3>
+			  <p>We offer a 30-day return policy for all products purchased through our website. If you are not satisfied with your purchase, please contact us within 30 days of receiving your order to initiate a return.</p>
+			</div>
+			
+			<div class="faq-item">
+			  <h3>How do I track my order?</h3>
+			  <p>You can track your order by the tacking id sent to you on your registered contact details once the order is shipped.</p>
+			</div>
+			
+			<div class="faq-item">
+			  <h3>What payment methods do you accept?</h3>
+			  <p>We accept all major credit and debit cards, as well as EasyPaisa and JazzCash.</p>
+			</div>
+			
+		  </section>
+
+		  <!--INSTAGRAM BUTTON-->
+
+<div class="floating-instagram">
+	<a href="https://www.instagram.com/vapezpk/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+	  <img src="instagram.png" alt="Instagram">
+	</a>
+  </div>
+  
+  <style>
+  .floating-instagram {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	background-color: #E1306C;
+  }
+  
+  .floating-instagram img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+  }
+  </style>
+
+    <!--FOODPANDA BUTTON-->
+
+<div class="floating-foodpanda">
+	<a href="https://www.foodpanda.pk/restaurants/new/?lng=74.27957817656412&lat=31.552063918367367&vertical=restaurants" target="_blank">
+	  <img src="foodpanda.png" alt="Foodpanda">
+	</a>
+  </div>
+  
+  <style>
+	.floating-foodpanda {
+	  position: fixed;
+	  bottom: 90px;
+	  right: 20px;
+	  border-radius: 50%;
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	  padding: 10px;
+	  background-color: #E1306C;
+	}
+	
+	.floating-foodpanda img {
+	  width: 30px;
+	  height: 30px;
+	  border-radius: 50%;
+	}
+	</style>
+
+
+<!--GO TO TOP BUTTON-->
+<div class="top-button">
+	<a href="#" onclick="scrollToTop()">
+	  <img src="top.png" alt="top-button">
+	</a>
+  </div>
+		 
+  <!--FOOTER-->
+
+<footer>
+	<!--GOOGLE MAPS -->
+	<div id="offlinelocation">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27200.38434946844!2d74.26290615005792!3d31.550296079043576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190333d0909891%3A0xf801ee84a0f03d9a!2sGulshan-e-Ravi%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1677610496326!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<br><br>
+	<div id="container">
+	  <div class="row">
+		<div class="col-md-6">
+			<div id="about-us">
+		  <h3>About Us</h3>
+		  <p>VAPE Z.PK is one of the largest online vape shop in Pakistan, offering the largest variety of vapes, eliquids and vape accessories. Taste the luxury with nationwide delivery available. We're also available on Foodpanda in Gulshan-e-Ravi, Lahore.</p>
+		  <h4>Contact Information:</h4>
+		  <ul>
+			<li><i class="fas fa-envelope"></i> vapezpk@gmail.com</li>
+			<li><i class="fas fa-phone"></i> 0315-5734088</li>
+		  </ul>
+		</div>
+	</div>
+		<br><br>
+		<div class="col-md-6">
+		  <h3>Payment Methods</h3>
+		  <div class="payment-methods">
+			<img src="visa.jpg" alt="Visa">
+			<img src="mastercard.png" alt="Mastercard">
+			<img src="unionpay.png" alt="UnionPay">
+			<img src="paypak.png" alt="PayPak">
+			<img src="easypaisa.jpg" alt="EasyPaisa">
+			<img src="jazzcashlogo.jpg" alt="JazzCash">
+			<img src="bank transfer.png" alt="Bank Transfer">
+			<img src="cod.png" alt="Cash On Delivery">
+		  </div>
+		</div>
+	  </div>
+	  <br><br>
+	  <div class="row social-media-icons">
+		<h3>Social Media Platforms</h3>
+		<div class="col-md-12">
+		  <i class="fab fa-facebook-f"></i>
+		  <i class="fab fa-twitter"></i>
+		  <i class="fab fa-instagram"></i>
+		  <i class="fab fa-pinterest-p"></i>
+		  <i class="fab fa-youtube"></i>
+		</div>
+	  </div>
+	  <br><br>
+	  <div class="row">
+		<div class="col-md-12">
+		  <p class="footer-credits text-center">Copyright 2023 © VAPE Z.pk Developed by POWERPUFF TEAM Pvt Ltd
+		  </p>
+		</div>
+	  </div>
+	</div>
+  </footer>
+  
+  
+</body>
+</html>

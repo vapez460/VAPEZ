@@ -1,0 +1,160 @@
+body {
+    background-image: linear-gradient(to right, #87CEFA, #FFC0CB);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-image: url('https://www.motherjones.com/wp-content/uploads/2019/09/AP_19255526539251_edited.jpg?w=1200&h=630&crop=1');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  section {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .coupon-code {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .coupon-code label {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  
+  .coupon-code input[type="text"] {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .shipping-form label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .shipping-form input[type="text"] {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-selector {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .payment-selector label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .payment-selector input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+
+  /* Payment */
+
+  .payment-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payment-images img {
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+.payment-images img.hidden {
+    display: none;
+}
+
+  
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add a 10px margin between products */
+  }
+  
+  .product img {
+    width: 1in;
+    height: 1in;
+    margin-right: 10px;
+  }
+  
+  .product h3 {
+    margin: 0;
+  }
+  
+  .product p {
+    margin: 0;
+  }
+  
+  .product .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
